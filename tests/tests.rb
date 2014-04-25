@@ -23,6 +23,15 @@ class SetConstTests < Test::Unit::TestCase
     $stderr = @_stderr
   end
 
+  def test_returned_value
+    v = rand
+    assert_equal(v, set_const('ARGV', v))
+  end
+
+  def test_nonexitent_const
+    assert_nothing_raised { set_const('IDONTEXIST_210X43A', 18) }
+  end
+
   def test_simple_set_const_ARGV
       set_const('ARGV', 42)
       assert_equal(42, ARGV)
