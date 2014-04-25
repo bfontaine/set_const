@@ -2,7 +2,7 @@
 
 require 'silent'
 
-def set_const(name, value, **opts)
+def set_const(name, value, opts={})
   parent = opts[:parent] || Object
 
   silent(:stderr) do
