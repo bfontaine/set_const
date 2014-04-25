@@ -1,34 +1,34 @@
-# const\_set
+# set\_const
 
-[![Build Status](https://img.shields.io/travis/bfontaine/const_set.svg)](https://travis-ci.org/bfontaine/const_set)
-[![Gem Version](https://img.shields.io/gem/v/const_set.png)](http://badge.fury.io/rb/const_set)
-[![Coverage Status](https://img.shields.io/coveralls/bfontaine/const_set.svg)](https://coveralls.io/r/bfontaine/const_set)
-[![Dependency Status](https://img.shields.io/gemnasium/bfontaine/const_set.svg)](https://gemnasium.com/bfontaine/const_set)
+[![Build Status](https://img.shields.io/travis/bfontaine/set_const.svg)](https://travis-ci.org/bfontaine/set_const)
+[![Gem Version](https://img.shields.io/gem/v/set_const.png)](http://badge.fury.io/rb/set_const)
+[![Coverage Status](https://img.shields.io/coveralls/bfontaine/set_const.svg)](https://coveralls.io/r/bfontaine/set_const)
+[![Dependency Status](https://img.shields.io/gemnasium/bfontaine/set_const.svg)](https://gemnasium.com/bfontaine/set_const)
 
-**const_set** is a (dangerous) gem that let you modify a constant’s value
+**set\_const** is a (dangerous) gem that let you modify a constant’s value
 without any warning. It’s useful for testing purposes, for example when your
 code rely on a constant like `ARGV` or `RUBY_PLATEFORM`.
 
 ## Install
 
 ```
-gem install const_set
+gem install set_const
 ```
 
 ## Usage
 
 ```rb
-require 'const_set'
+require 'set_const'
 
-const_set('ARGV', %w[--foo bar])
-const_set('RUBY_PLATFORM', 'Foobar')
+set_const('ARGV', %w[--foo bar])
+set_const('RUBY_PLATFORM', 'Foobar')
 ```
 
 ## Tests
 
 ```
-$ git clone https://github.com/bfontaine/const_set.git
-$ cd const_set
+$ git clone https://github.com/bfontaine/set_const.git
+$ cd set_const
 $ bundle install
 $ bundle exec rake test
 ```

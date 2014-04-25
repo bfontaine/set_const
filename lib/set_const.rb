@@ -2,8 +2,8 @@
 
 require 'silent'
 
-def const_set(name, value, **opts)
-  parent = opts[:parent] or Object
+def set_const(name, value, **opts)
+  parent = opts[:parent] || Object
 
   silent(:stderr) do
     parent.send(:const_set, name, value)

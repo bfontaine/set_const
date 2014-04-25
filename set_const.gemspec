@@ -1,7 +1,7 @@
-require './lib/const_set'
+require './lib/set_const'
 
 Gem::Specification.new do |s|
-    s.name          = 'const_set'
+    s.name          = 'set_const'
     s.version       = '0.1.0'
     s.date          = Time.now
 
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 
     s.author        = 'Baptiste Fontaine'
     s.email         = 'batifon@yahoo.fr'
-    s.homepage      = 'https://github.com/bfontaine/const_set'
+    s.homepage      = 'https://github.com/bfontaine/set_const'
 
     s.files         = Dir['lib/**/*.rb']
     s.test_files    = Dir['tests/**/*.rb']
