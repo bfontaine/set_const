@@ -7,7 +7,7 @@
 
 **set\_const** is a (dangerous) gem that let you modify a constant’s value
 without any warning. It’s useful for testing purposes, for example when your
-code rely on a constant like `ARGV` or `RUBY_PLATEFORM`.
+code rely on a constant like `ARGV` or `RUBY_PLATFORM`.
 
 ## Install
 
